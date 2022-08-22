@@ -144,9 +144,3 @@ class Hyde:
         else:
             content.seek(0)
             return content
-
-
-if __name__ == '__main__':
-    path = Path.cwd().joinpath('demo')
-    hyde = Hyde(root_path=path)
-    hyde.generate_site()
